@@ -1,0 +1,24 @@
+public static String cipher(String oldWord)
+    {
+        String currentWord = "";
+        int len = oldWord.length();
+        int splitNumber;
+        if(len % 2 == 1)
+        {
+            splitNumber = len / 2;
+        }
+        else
+        {
+            splitNumber = len / 2 - 1;
+        }
+        for (int i = splitNumber; i >= 0; i--) 
+        {
+            currentWord += oldWord.charAt(i);
+        }
+        for (int i = len-1; i > splitNumber; i--) 
+        {
+            currentWord += oldWord.charAt(i);
+        }
+        System.out.println(currentWord);
+        return currentWord;
+    }
