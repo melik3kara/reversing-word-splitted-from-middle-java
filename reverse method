@@ -1,4 +1,4 @@
-public static String cipher(String oldWord)
+public static String reverse(String oldWord)
     {
         String currentWord = "";
         int len = oldWord.length();
